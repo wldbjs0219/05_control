@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 	scanf("%d",&input);
 	
 	if(input>0)
-	printf("It's a positive number.'\n");
+	printf("It's a positive number. \n");
 	else
 	printf("It's a negative number. \n");
 	
