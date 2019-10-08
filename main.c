@@ -5,13 +5,30 @@
 
 int main(int argc, char *argv[]) 
 {
-	int i=0,meter;
+	int answer= 59;
+	int input;
+	int cnt=0;
 	
-	while (i<3)
+	do
 	{
-		meter=i*1609;
-		printf("%d 마일은 %d 미터입니다. \n", i,meter);
-		i++;
+		printf ("Guess a number: ");
+		scanf("%d", &input);
+		if(input < answer)
+		{
+			printf("low!\n");
+		}
+		else if (input>answer)
+		{
+		    printf("high!\n");
+		}
+		cnt++;
 	}
+	while(input != answer);
+	
+	printf("congratilation. trial : %i\n",cnt);
 	return 0;
+	
 }
+
+
+
