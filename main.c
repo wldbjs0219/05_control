@@ -3,11 +3,23 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main (int argc, char *argv[])
-{
-	int i;
-	for (i=0; i<10; i++)
-	 printf("Hello World! \n");
-	 
-	 return 0;
+int main (int argc, char *argv[]) {
+	
+	char c;
+	int num=0;
+	
+	printf("input a string : ");
+	
+	while ((c=getchar()) != '\n' )
+	{
+		   if (c<= '9' && c>= '0')
+		   {
+		   	     num++;
+		   	    
+			}
+	}
+	
+	printf("the number of degits is : %i\n", num);
+    return 0;
+    
 }
